@@ -299,7 +299,7 @@ Hooks.on("renderSettingsConfig", (app, html, data, ...others) => {
 Hooks.on("renderMacroConfig", (app, html, data) => {
 	const typeSelect = $(html).find("select[name='type']");
 	const typeSelectDiv = typeSelect.closest("div");
-	const flag = app.object.getFlag("condition-lab-triggler", "macroTrigger");
+	const flag = data?.document?.getFlag("condition-lab-triggler", "macroTrigger") ?? "";
 	const triggers = game.settings.get("condition-lab-triggler", "storedTriggers");
 
 	const select = foundry.applications.fields.createSelectInput({
