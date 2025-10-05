@@ -1,6 +1,5 @@
 {
 	"id": "condition-lab-triggler",
-	"name": "condition-lab-triggler",
 	"title": "Condition Lab & Triggler",
 	"description": "Adds various combat-focused features",
 	"authors": [
@@ -77,7 +76,7 @@
 	],
 	"styles": ["styles/condition-lab-triggler.css"],
 	"compatibility": {
-		"minimum": "12",
+		"minimum": "13",
 		"verified": "13"
 	},
 	"relationships": {
