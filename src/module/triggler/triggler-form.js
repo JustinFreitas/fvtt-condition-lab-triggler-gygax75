@@ -351,14 +351,14 @@ export class TrigglerForm extends FormApplication {
 			content: await renderTemplate("modules/condition-lab-triggler/templates/import-conditions.html", {}),
 			buttons: {
 				import: {
-					icon: '<i class="fas fa-file-import"></i>',
+					icon: '<i class="fa-solid fa-file-import"></i>',
 					label: game.i18n.localize("CLT.WORDS.Import"),
 					callback: (html) => {
 						this._processImport(html);
 					}
 				},
 				no: {
-					icon: '<i class="fas fa-times"></i>',
+					icon: '<i class="fa-solid fa-times"></i>',
 					label: game.i18n.localize("Cancel")
 				}
 			},
@@ -399,7 +399,7 @@ export class TrigglerForm extends FormApplication {
 			{
 				label: game.i18n.localize("CLT.WORDS.Import"),
 				class: "import",
-				icon: "fas fa-file-import",
+				icon: "fa-solid fa-file-import",
 				onclick: async (ev) => {
 					await this._importFromJSONDialog();
 				}
@@ -407,7 +407,7 @@ export class TrigglerForm extends FormApplication {
 			{
 				label: game.i18n.localize("CLT.WORDS.Export"),
 				class: "export",
-				icon: "fas fa-file-export",
+				icon: "fa-solid fa-file-export",
 				onclick: async (ev) => {
 					this._exportToJSON();
 				}

@@ -367,14 +367,14 @@ export class ConditionLab extends FormApplication {
 			content: await renderTemplate("modules/condition-lab-triggler/templates/import-conditions.html", {}),
 			buttons: {
 				import: {
-					icon: '<i class="fas fa-file-import"></i>',
+					icon: '<i class="fa-solid fa-file-import"></i>',
 					label: game.i18n.localize("CLT.WORDS.Import"),
 					callback: (html) => {
 						this._processImport(html);
 					}
 				},
 				no: {
-					icon: '<i class="fas fa-times"></i>',
+					icon: '<i class="fa-solid fa-times"></i>',
 					label: game.i18n.localize("Cancel")
 				}
 			},
@@ -415,7 +415,7 @@ export class ConditionLab extends FormApplication {
 			{
 				label: game.i18n.localize("CLT.WORDS.Import"),
 				class: "import",
-				icon: "fas fa-file-import",
+				icon: "fa-solid fa-file-import",
 				onclick: async (ev) => {
 					this._importFromJSONDialog();
 				}
@@ -423,7 +423,7 @@ export class ConditionLab extends FormApplication {
 			{
 				label: game.i18n.localize("CLT.WORDS.Export"),
 				class: "export",
-				icon: "fas fa-file-export",
+				icon: "fa-solid fa-file-export",
 				onclick: async (ev) => {
 					this._exportToJSON();
 				}
@@ -846,7 +846,7 @@ export class ConditionLab extends FormApplication {
 			content,
 			buttons: {
 				yes: {
-					icon: '<i class="fas fa-check"></i>',
+					icon: '<i class="fa-solid fa-check"></i>',
 					label: game.i18n.localize("Yes"),
 					callback: ($html) => {
 						const checkbox = $html[0].querySelector("input[name='clear-cache']");
@@ -855,7 +855,7 @@ export class ConditionLab extends FormApplication {
 					}
 				},
 				no: {
-					icon: '<i class="fas fa-times"></i>',
+					icon: '<i class="fa-solid fa-times"></i>',
 					label: game.i18n.localize("No"),
 					callback: () => { }
 				}

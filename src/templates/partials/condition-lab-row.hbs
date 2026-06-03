@@ -35,7 +35,7 @@
                     <button type="button"
                         name="option-config"
                         class="option-config">
-                        <i class="fas fa-cog"></i>
+                        <i class="fa-solid fa-gear"></i>
                     </button>
                     <button type="button"
                             class="active-effect-config"
@@ -45,7 +45,7 @@
                                 {{/if}}"
                                     {{disabled (or condition.isNew isDefault)}}
                                 data-tooltip-direction="UP">
-                        <i class="fas fa-hand-sparkles"></i>
+                        <i class="fa-solid fa-hand-sparkles"></i>
                     </button>
                     <div class="flex-break"></div>
                     <button type="button"
@@ -55,26 +55,26 @@
                     <button type="button"
                         name="macro-config"
                         class="macro-config">
-                        <i class="fas fa-code"></i>
+                        <i class="fa-solid fa-code"></i>
                     </button>
                 </div>
             </div>
             <div class="flexcol row-controls">
                 <div class="move-up">
                     {{#unless (or sortDirection (eq key 0))}}
-                    <a class="move-up"><i class="fas fa-chevron-up"></i></a>
+                    <a class="move-up"><i class="fa-solid fa-chevron-up"></i></a>
                     {{/unless}}
                 </div>
                 <div class="remove-row">
                     {{#unless isDefault}}
                     <a name="remove-row-{{@index}}" class="remove-row">
-                        <i class="fas fa-trash"></i>
+                        <i class="fa-solid fa-trash"></i>
                     </a>
                     {{/unless}}
                 </div>
                 <div class="move-down">
                     {{#unless (or sortDirection (eq key conditionMapLength))}}
-                    <a class="move-down"><i class="fas fa-chevron-down"></i></a>
+                    <a class="move-down"><i class="fa-solid fa-chevron-down"></i></a>
                     {{/unless}}
                 </div>
             </div>

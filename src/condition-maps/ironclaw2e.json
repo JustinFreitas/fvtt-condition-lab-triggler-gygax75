@@ -16,7 +16,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"WGljaB1SMqPtXDwC\"><i class=\"fas fa-book-open\"></i> Focused</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"WGljaB1SMqPtXDwC\"><i class=\"fa-solid fa-book-open\"></i> Focused</a>",
 			"isChanged": false
 		},
 		{
@@ -34,7 +34,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"sNhLDTvRmn4LG4Qj\"><i class=\"fas fa-book-open\"></i> Aiming</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"sNhLDTvRmn4LG4Qj\"><i class=\"fa-solid fa-book-open\"></i> Aiming</a>",
 			"isChanged": false
 		},
 		{
@@ -52,7 +52,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"ZzpRbp4XIFV5y8rW\"><i class=\"fas fa-book-open\"></i> Guarding</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"ZzpRbp4XIFV5y8rW\"><i class=\"fa-solid fa-book-open\"></i> Guarding</a>",
 			"isChanged": false
 		},
 		{
@@ -70,7 +70,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2RqmHH9RbzJKjdKA\"><i class=\"fas fa-book-open\"></i> Reeling</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2RqmHH9RbzJKjdKA\"><i class=\"fa-solid fa-book-open\"></i> Reeling</a>",
 			"isChanged": false
 		},
 		{
@@ -88,7 +88,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"7buKwZrZVy8OwPhx\"><i class=\"fas fa-book-open\"></i> Hurt</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"7buKwZrZVy8OwPhx\"><i class=\"fa-solid fa-book-open\"></i> Hurt</a>",
 			"isChanged": false
 		},
 		{
@@ -106,7 +106,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"krkg0YwKTNyD8BPM\"><i class=\"fas fa-book-open\"></i> Afraid</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"krkg0YwKTNyD8BPM\"><i class=\"fa-solid fa-book-open\"></i> Afraid</a>",
 			"isChanged": false
 		},
 		{
@@ -124,7 +124,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"XZ1nn0BJoBGtHSYt\"><i class=\"fas fa-book-open\"></i> Injured</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"XZ1nn0BJoBGtHSYt\"><i class=\"fa-solid fa-book-open\"></i> Injured</a>",
 			"isChanged": false
 		},
 		{
@@ -142,7 +142,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"1Jg9RzQ24bpHnh7A\"><i class=\"fas fa-book-open\"></i> Dying</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"1Jg9RzQ24bpHnh7A\"><i class=\"fa-solid fa-book-open\"></i> Dying</a>",
 			"isChanged": false
 		},
 		{
@@ -160,7 +160,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"JsnatC5y42DGbPP3\"><i class=\"fas fa-book-open\"></i> Dead</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"JsnatC5y42DGbPP3\"><i class=\"fa-solid fa-book-open\"></i> Dead</a>",
 			"isChanged": false
 		},
 		{
@@ -178,7 +178,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"iL6ssGkLXwHPqRLh\"><i class=\"fas fa-book-open\"></i> Overkilled</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"iL6ssGkLXwHPqRLh\"><i class=\"fa-solid fa-book-open\"></i> Overkilled</a>",
 			"isChanged": false
 		},
 		{
@@ -196,7 +196,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"fy5EtGmfIZbpbqd1\"><i class=\"fas fa-book-open\"></i> Asleep</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"fy5EtGmfIZbpbqd1\"><i class=\"fa-solid fa-book-open\"></i> Asleep</a>",
 			"isChanged": false
 		},
 		{
@@ -214,7 +214,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"y17nrzjqcBNdnyVo\"><i class=\"fas fa-book-open\"></i> Unconscious</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"y17nrzjqcBNdnyVo\"><i class=\"fa-solid fa-book-open\"></i> Unconscious</a>",
 			"isChanged": false
 		},
 		{
@@ -232,7 +232,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"pJTP7nRDfLCXTAzO\"><i class=\"fas fa-book-open\"></i> Burdened</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"pJTP7nRDfLCXTAzO\"><i class=\"fa-solid fa-book-open\"></i> Burdened</a>",
 			"isChanged": false
 		},
 		{
@@ -264,7 +264,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"Ms6nfCALR2RxiwFc\"><i class=\"fas fa-book-open\"></i> Over-Burdened</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"Ms6nfCALR2RxiwFc\"><i class=\"fa-solid fa-book-open\"></i> Over-Burdened</a>",
 			"isChanged": false
 		},
 		{
@@ -282,7 +282,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"8X3gh1U1g5NQxwbA\"><i class=\"fas fa-book-open\"></i> Cannot Move</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"8X3gh1U1g5NQxwbA\"><i class=\"fa-solid fa-book-open\"></i> Cannot Move</a>",
 			"isChanged": false
 		},
 		{
@@ -300,7 +300,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"O8Cf7H1AoijQfdmL\"><i class=\"fas fa-book-open\"></i> Fatigued</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"O8Cf7H1AoijQfdmL\"><i class=\"fa-solid fa-book-open\"></i> Fatigued</a>",
 			"isChanged": false
 		},
 		{
@@ -318,7 +318,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"HFHtUwuSoZ6wQutn\"><i class=\"fas fa-book-open\"></i> Sick</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"HFHtUwuSoZ6wQutn\"><i class=\"fa-solid fa-book-open\"></i> Sick</a>",
 			"isChanged": false
 		},
 		{
@@ -336,7 +336,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"E156mwoPTBUaagBB\"><i class=\"fas fa-book-open\"></i> Confused</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"E156mwoPTBUaagBB\"><i class=\"fa-solid fa-book-open\"></i> Confused</a>",
 			"isChanged": false
 		},
 		{
@@ -354,7 +354,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"soFkqUQFGaY3Q8IM\"><i class=\"fas fa-book-open\"></i> Terrified</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"soFkqUQFGaY3Q8IM\"><i class=\"fa-solid fa-book-open\"></i> Terrified</a>",
 			"isChanged": false
 		},
 		{
@@ -372,7 +372,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2TtNJmDXp79MvLk9\"><i class=\"fas fa-book-open\"></i> Enraged</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2TtNJmDXp79MvLk9\"><i class=\"fa-solid fa-book-open\"></i> Enraged</a>",
 			"isChanged": false
 		},
 		{
@@ -390,7 +390,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"Rs6XYXEEYOIbUVZo\"><i class=\"fas fa-book-open\"></i> Knockdown</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"Rs6XYXEEYOIbUVZo\"><i class=\"fa-solid fa-book-open\"></i> Knockdown</a>",
 			"isChanged": false
 		},
 		{
@@ -408,7 +408,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"dtpk97W1sWJY68zF\"><i class=\"fas fa-book-open\"></i> Berserk</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"dtpk97W1sWJY68zF\"><i class=\"fa-solid fa-book-open\"></i> Berserk</a>",
 			"isChanged": false
 		},
 		{
@@ -426,7 +426,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"XW0PM0eiepT2fqcD\"><i class=\"fas fa-book-open\"></i> Blinded</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"XW0PM0eiepT2fqcD\"><i class=\"fa-solid fa-book-open\"></i> Blinded</a>",
 			"isChanged": false
 		},
 		{
@@ -444,7 +444,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"8WNaDcPi0IJbaJAk\"><i class=\"fas fa-book-open\"></i> Silenced</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"8WNaDcPi0IJbaJAk\"><i class=\"fa-solid fa-book-open\"></i> Silenced</a>",
 			"isChanged": false
 		},
 		{
@@ -462,7 +462,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"C9275OGG3YcLz1cb\"><i class=\"fas fa-book-open\"></i> Full Tilt</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"C9275OGG3YcLz1cb\"><i class=\"fa-solid fa-book-open\"></i> Full Tilt</a>",
 			"isChanged": false
 		},
 		{
@@ -480,7 +480,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"nbQkEI0uPTHdQtPk\"><i class=\"fas fa-book-open\"></i> Slowed</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"nbQkEI0uPTHdQtPk\"><i class=\"fa-solid fa-book-open\"></i> Slowed</a>",
 			"isChanged": false
 		},
 		{
@@ -498,7 +498,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"lveZKbwsOHC8wg25\"><i class=\"fas fa-book-open\"></i> Immobilized</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"lveZKbwsOHC8wg25\"><i class=\"fa-solid fa-book-open\"></i> Immobilized</a>",
 			"isChanged": false
 		},
 		{
@@ -516,7 +516,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2oqPSchTRfNviHhm\"><i class=\"fas fa-book-open\"></i> Half-Buried</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"2oqPSchTRfNviHhm\"><i class=\"fa-solid fa-book-open\"></i> Half-Buried</a>",
 			"isChanged": false
 		},
 		{
@@ -534,7 +534,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"9SQeyWG4sy1vaXO4\"><i class=\"fas fa-book-open\"></i> On Fire</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"9SQeyWG4sy1vaXO4\"><i class=\"fa-solid fa-book-open\"></i> On Fire</a>",
 			"isChanged": false
 		},
 		{
@@ -552,7 +552,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"EMsCXyLEv1SEXIT4\"><i class=\"fas fa-book-open\"></i> Mesmerized</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"EMsCXyLEv1SEXIT4\"><i class=\"fa-solid fa-book-open\"></i> Mesmerized</a>",
 			"isChanged": false
 		},
 		{
@@ -570,7 +570,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"QJyebhpwRNfvkFEi\"><i class=\"fas fa-book-open\"></i> Marionette</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"QJyebhpwRNfvkFEi\"><i class=\"fa-solid fa-book-open\"></i> Marionette</a>",
 			"isChanged": false
 		},
 		{
@@ -588,7 +588,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"rjHftAZgQQTg41ag\"><i class=\"fas fa-book-open\"></i> Controlled</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"rjHftAZgQQTg41ag\"><i class=\"fa-solid fa-book-open\"></i> Controlled</a>",
 			"isChanged": false
 		},
 		{
@@ -606,7 +606,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"MItXHxvNgfSCFenc\"><i class=\"fas fa-book-open\"></i> All Fours</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"MItXHxvNgfSCFenc\"><i class=\"fa-solid fa-book-open\"></i> All Fours</a>",
 			"isChanged": false
 		},
 		{
@@ -624,7 +624,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"zghrfBq4iiKosTKu\"><i class=\"fas fa-book-open\"></i> Flying</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"zghrfBq4iiKosTKu\"><i class=\"fa-solid fa-book-open\"></i> Flying</a>",
 			"isChanged": false
 		},
 		{
@@ -642,7 +642,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"lQRKvbZYOo7izSdT\"><i class=\"fas fa-book-open\"></i> Grappled</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"lQRKvbZYOo7izSdT\"><i class=\"fa-solid fa-book-open\"></i> Grappled</a>",
 			"isChanged": false
 		},
 		{
@@ -660,7 +660,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"5J32lLlKCtZhFbuR\"><i class=\"fas fa-book-open\"></i> Hiding</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"5J32lLlKCtZhFbuR\"><i class=\"fa-solid fa-book-open\"></i> Hiding</a>",
 			"isChanged": false
 		},
 		{
@@ -678,7 +678,7 @@
 				"outputChat": false
 			},
 			"isNew": false,
-			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"UOSMGqjqbc8GwAXe\"><i class=\"fas fa-book-open\"></i> Temporary Ward</a>",
+			"enrichedReference": "<a class=\"entity-link content-link\" draggable=\"true\" data-pack=\"ironclaw2e.statuseffects\" data-id=\"UOSMGqjqbc8GwAXe\"><i class=\"fa-solid fa-book-open\"></i> Temporary Ward</a>",
 			"isChanged": false
 		},
 		{

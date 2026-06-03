@@ -828,7 +828,7 @@
 			},
 			"isNew": false,
 			"isChanged": false,
-			"enrichedReference": "<a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.cyberpunk-red-core.drugs-items.CyYpPh89G7IYyryM\" data-id=\"CyYpPh89G7IYyryM\" data-type=\"Item\" data-pack=\"cyberpunk-red-core.drugs-items\" data-tooltip=\"Drug Item\"><i class=\"fas fa-suitcase\"></i>Synthcoke</a>",
+			"enrichedReference": "<a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.cyberpunk-red-core.drugs-items.CyYpPh89G7IYyryM\" data-id=\"CyYpPh89G7IYyryM\" data-type=\"Item\" data-pack=\"cyberpunk-red-core.drugs-items\" data-tooltip=\"Drug Item\"><i class=\"fa-solid fa-suitcase\"></i>Synthcoke</a>",
 			"hidden": false
 		},
 		{

@@ -77,7 +77,7 @@
 	"styles": ["styles/condition-lab-triggler.css"],
 	"compatibility": {
 		"minimum": "13",
-		"verified": "13"
+		"verified": "14"
 	},
 	"relationships": {
 		"conflicts": [

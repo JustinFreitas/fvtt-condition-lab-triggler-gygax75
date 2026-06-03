@@ -11,8 +11,8 @@
 	{{#if type.active}}{{else}}
 		<div class="add-remove">
 			<span class="add-remove-icon" data-tooltip="{{type.title}} {{timeSince timestamp}}">
-				{{#if type.removed}}<i class="fas fa-minus"></i>
-				{{else if type.added}}<span class="added" /><i class="fas fa-plus"></i>
+				{{#if type.removed}}<i class="fa-solid fa-minus"></i>
+				{{else if type.added}}<span class="added" /><i class="fa-solid fa-plus"></i>
 				{{/if}}
 			</span>
 		</div>
@@ -33,13 +33,13 @@
 		{{#if type.removed}}
 			<div class="undo-remove">
 				<a name="undo-remove" data-tooltip="{{localize 'CLT.ENHANCED_CONDITIONS.ChatCard.Buttons.Undo'}}">
-					<i class="fas fa-undo"></i>
+					<i class="fa-solid fa-rotate-left"></i>
 				</a>
 			</div>
 		{{else}}
 			<div class="remove-row">
 				<a name="remove-row" data-tooltip="{{localize 'CLT.ENHANCED_CONDITIONS.ChatCard.Buttons.Remove'}}">
-					<i class="fas fa-times"></i>
+					<i class="fa-solid fa-xmark"></i>
 				</a>
 			</div>
 		{{/if}}

@@ -249,14 +249,14 @@ Hooks.on("getSceneControlButtons", function (hudButtons) {
 			hud.tools.push({
 				name: "CLT.ENHANCED_CONDITIONS.Lab.Title",
 				title: "CLT.ENHANCED_CONDITIONS.Lab.Title",
-				icon: "fas fa-flask",
+				icon: "fa-solid fa-flask",
 				button: true,
 				onClick: async () => new ConditionLab().render(true)
 			});
 			hud.tools.push({
 				name: "Triggler",
 				title: "Triggler",
-				icon: "fas fa-exclamation",
+				icon: "fa-solid fa-exclamation",
 				button: true,
 				onClick: async () => new TrigglerForm().render(true)
 			});

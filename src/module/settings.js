@@ -109,7 +109,7 @@ export function registerSettings() {
 		name: "CLT.ENHANCED_CONDITIONS.Lab.Title",
 		label: "CLT.ENHANCED_CONDITIONS.Lab.Title",
 		hint: "CLT.ENHANCED_CONDITIONS.Lab.Hint",
-		icon: "fas fa-flask",
+		icon: "fa-solid fa-flask",
 		type: ConditionLab,
 		restricted: true
 	});
@@ -192,7 +192,7 @@ export function registerSettings() {
 		name: "CLT.SETTINGS.Triggler.TriggersN",
 		label: "CLT.SETTINGS.Triggler.TriggersN",
 		hint: "CLT.SETTINGS.Triggler.TriggersH",
-		icon: "fas fa-exclamation",
+		icon: "fa-solid fa-exclamation",
 		type: TrigglerForm,
 		restricted: true
 	});
