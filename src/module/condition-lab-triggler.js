@@ -271,11 +271,11 @@ Hooks.on("renderSceneControls", (app, html, data) => {
 		const exclamationMark = trigglerButton.children[0];
 		exclamationMark.style.marginRight = "0px";
 		const rightChevron = document.createElement("i");
-		rightChevron.classList.add("fas", "fa-angle-right");
+		rightChevron.classList.add("fa-solid", "fa-angle-right");
 		rightChevron.style.marginRight = "0px";
 		trigglerButton.insertBefore(rightChevron, exclamationMark);
 		const leftChevron = document.createElement("i");
-		leftChevron.classList.add("fas", "fa-angle-left");
+		leftChevron.classList.add("fa-solid", "fa-angle-left");
 		exclamationMark.after(leftChevron);
 	}
 });
@@ -288,10 +288,10 @@ Hooks.on("renderSettingsConfig", (app, html, data, ...others) => {
 		const exclamationMark = trigglerMenu.children[0];
 		exclamationMark.style.margin = "0 -6px";
 		const rightChevron = document.createElement("i");
-		rightChevron.classList.add("fas", "fa-angle-right");
+		rightChevron.classList.add("fa-solid", "fa-angle-right");
 		trigglerMenu.insertBefore(rightChevron, exclamationMark);
 		const leftChevron = document.createElement("i");
-		leftChevron.classList.add("fas", "fa-angle-left");
+		leftChevron.classList.add("fa-solid", "fa-angle-left");
 		exclamationMark.after(leftChevron);
 	}
 });

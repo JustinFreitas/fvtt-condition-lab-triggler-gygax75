@@ -622,7 +622,7 @@ export class ConditionLab extends FormApplication {
 		if (!conditionEffect) return;
 
 		if (!foundry.utils.hasProperty(conditionEffect, "flags.condition-lab-triggler.conditionId")) {
-			setProperty(
+			foundry.utils.setProperty(
 				conditionEffect,
 				"flags.condition-lab-triggler.conditionId",
 				conditionId
