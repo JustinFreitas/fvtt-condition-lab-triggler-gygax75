@@ -123,6 +123,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           name: ${{ github.event.release.name }}
+          make_latest: ${{ !github.event.release.prerelease }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             ./dist/${{ env.package_type }}.json
