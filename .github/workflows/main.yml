@@ -64,7 +64,11 @@ jobs:
 
       - name: Extract tag version number
         id: get_version
-        uses: battila7/get-version-action@v2
+        env:
+          TAG_NAME: ${{ github.event.release.tag_name }}
+        run: |
+          # Strip a leading "v" to mirror battila7/get-version-action's version-without-v output.
+          echo "version-without-v=${TAG_NAME#v}" >> "$GITHUB_OUTPUT"
 
       - name: Substitute Manifest and Download Links For Versioned Ones
         id: sub_manifest_link_version
@@ -116,11 +120,12 @@ jobs:
 
       - name: Create release
         id: create_version_release
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v3
         with:
-          allowUpdates: true
           name: ${{ github.event.release.name }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './dist/${{ env.package_type }}.json, ./${{ env.package_type }}.zip'
-          tag: ${{ github.event.release.tag_name }}
+          files: |
+            ./dist/${{ env.package_type }}.json
+            ./${{ env.package_type }}.zip
+          tag_name: ${{ github.event.release.tag_name }}
           body: ${{ github.event.release.body }}
