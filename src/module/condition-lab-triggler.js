@@ -69,9 +69,12 @@ Hooks.on("i18nInit", () => {
 				divisor: 5
 			}
 		};
+		const tokenTarget = typeof foundry !== "undefined" && foundry.canvas?.placeables?.Token
+			? "foundry.canvas.placeables.Token.prototype._refreshEffects"
+			: "Token.prototype._refreshEffects";
 		libWrapper.register(
 			"condition-lab-triggler",
-			"Token.prototype._refreshEffects",
+			tokenTarget,
 			function () {
 				const effectSize = game.settings.get("condition-lab-triggler", "effectSize");
 				// Use the default values if no setting found
@@ -327,7 +330,8 @@ Hooks.on("renderChatLog", (app, html, data) => {
 	EnhancedConditions.updateConditionTimestamps();
 });
 
-Hooks.on("renderChatMessage", (app, html, data) => {
+const renderChatMessageHook = (game.release?.generation ?? 0) >= 13 ? "renderChatMessageHTML" : "renderChatMessage";
+Hooks.on(renderChatMessageHook, (app, html, data) => {
 	if (data.message.content && !data.message.content.match("enhanced-conditions")) {
 		return;
 	}

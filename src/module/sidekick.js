@@ -10,7 +10,8 @@ export class Sidekick {
 	 */
 	static async fetchJsons(source, path) {
 		const extensions = [".json"];
-		const fp = await FilePicker.browse(source, path, { extensions });
+		const FilePickerClass = foundry.applications?.apps?.FilePicker?.implementation ?? FilePicker;
+		const fp = await FilePickerClass.browse(source, path, { extensions });
 		const fetchedJsons = fp?.files?.length ? await Promise.all(fp.files.map((f) => Sidekick.fetchJson(f))) : [];
 		const jsons = fetchedJsons.filter((j) => !!j);
 
@@ -131,7 +132,8 @@ export class Sidekick {
 			"modules/condition-lab-triggler/templates/partials/condition-lab-row.hbs",
 			"modules/condition-lab-triggler/templates/partials/triggler-icon.hbs"
 		];
-		await loadTemplates(templates);
+		const loadTemplatesFunc = foundry.applications?.handlebars?.loadTemplates ?? loadTemplates;
+		await loadTemplatesFunc(templates);
 	}
 
 	/**
