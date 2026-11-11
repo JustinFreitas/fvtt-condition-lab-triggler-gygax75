@@ -281,17 +281,24 @@ export class ConditionLab extends FormApplication {
 		const showDialogSetting = game.settings.get("condition-lab-triggler", "showSortDirectionDialog");
 
 		if (this.sortDirection && showDialogSetting) {
-			await Dialog.confirm({
-				title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.ConditionLab.SortDirectionSave.Title"),
+			await foundry.applications.api.DialogV2.confirm({
+				classes: ["ose", "dialog"],
+				position: { width: 400, height: "auto" },
+				window: { title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.ConditionLab.SortDirectionSave.Title") },
 				content: game.i18n.localize("CLT.ENHANCED_CONDITIONS.ConditionLab.SortDirectionSave.Content"),
-				yes: ($html) => {
-					const checkbox = $html[0].querySelector("input[name='dont-show-again']");
-					if (checkbox.checked) {
-						game.settings.set("condition-lab-triggler", "showSortDirectionDialog", false);
+				rejectClose: false,
+				yes: {
+					callback: (_event, _button, dialog) => {
+						const checkbox = dialog.element.querySelector("input[name='dont-show-again']");
+						if (checkbox?.checked) {
+							game.settings.set("condition-lab-triggler", "showSortDirectionDialog", false);
+						}
+						this._processFormUpdate(formData);
 					}
-					this._processFormUpdate(formData);
 				},
-				no: () => { }
+				no: {
+					callback: () => { }
+				}
 			});
 		} else {
 			this._processFormUpdate(formData);
@@ -362,24 +369,29 @@ export class ConditionLab extends FormApplication {
 	 * Borrowed from foundry.js Entity class
 	 */
 	async _importFromJSONDialog() {
-		new Dialog({
-			title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ImportTitle"),
-			content: await renderTemplate("modules/condition-lab-triggler/templates/import-conditions.html", {}),
-			buttons: {
-				import: {
-					icon: '<i class="fa-solid fa-file-import"></i>',
+		const renderTpl = foundry.applications?.handlebars?.renderTemplate ?? renderTemplate;
+		new foundry.applications.api.DialogV2({
+			classes: ["ose", "dialog"],
+			position: { width: 400, height: "auto" },
+			window: { title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ImportTitle") },
+			content: await renderTpl("modules/condition-lab-triggler/templates/import-conditions.html", {}),
+			buttons: [
+				{
+					action: "import",
+					icon: "fa-solid fa-file-import",
 					label: game.i18n.localize("CLT.WORDS.Import"),
-					callback: (html) => {
-						this._processImport(html);
+					default: true,
+					callback: (_event, _button, dialog) => {
+						this._processImport(dialog.element);
 					}
 				},
-				no: {
-					icon: '<i class="fa-solid fa-times"></i>',
+				{
+					action: "no",
+					icon: "fa-solid fa-times",
 					label: game.i18n.localize("Cancel")
 				}
-			},
-			default: "import"
-		}).render(true);
+			]
+		}).render({ force: true });
 	}
 
 	/**
@@ -388,7 +400,8 @@ export class ConditionLab extends FormApplication {
 	 * @returns {*}
 	 */
 	async _processImport(html) {
-		const form = html.find("form")[0];
+		const root = html instanceof HTMLElement ? html : html[0];
+		const form = root?.querySelector("form");
 
 		if (!form.data.files.length) {
 			return ui.notifications.error(game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.Import.NoFile"));
@@ -731,30 +744,34 @@ export class ConditionLab extends FormApplication {
 
 		const row = event.currentTarget.name.match(/\d+$/)[0];
 
-		const dialog = new Dialog({
-			title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ConfirmDeleteTitle"),
+		const dialog = new foundry.applications.api.DialogV2({
+			classes: ["ose", "dialog"],
+			position: { width: 400, height: "auto" },
+			window: { title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ConfirmDeleteTitle") },
 			content: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ConfirmDeleteContent"),
-			buttons: {
-				yes: {
-					icon: '<i class="fa fa-check"></i>',
+			buttons: [
+				{
+					action: "yes",
+					icon: "fa-solid fa-check",
 					label: game.i18n.localize("Yes"),
-					callback: async (event) => {
-						const newMap = foundry.utils.duplicate(this.map);
+					callback: async () => {
+						const newMap = foundry.utils.deepClone(this.map);
 						newMap.splice(row, 1);
 						this.map = newMap;
 						this.render();
 					}
 				},
-				no: {
-					icon: '<i class="fa fa-times"></i>',
+				{
+					action: "no",
+					icon: "fa-solid fa-times",
 					label: game.i18n.localize("No"),
-					callback: (event) => { }
+					default: true,
+					callback: () => { }
 				}
-			},
-			default: "no"
+			]
 		});
 
-		dialog.render(true);
+		dialog.render({ force: true });
 	}
 
 	/**
@@ -841,30 +858,33 @@ export class ConditionLab extends FormApplication {
 		event.preventDefault();
 		const content = game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.RestoreDefaultsContent");
 
-		const confirmationDialog = new Dialog({
-			title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.RestoreDefaultsTitle"),
+		const confirmationDialog = new foundry.applications.api.DialogV2({
+			classes: ["ose", "dialog"],
+			position: { width: 400, height: "auto" },
+			window: { title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.RestoreDefaultsTitle") },
 			content,
-			buttons: {
-				yes: {
-					icon: '<i class="fa-solid fa-check"></i>',
+			buttons: [
+				{
+					action: "yes",
+					icon: "fa-solid fa-check",
 					label: game.i18n.localize("Yes"),
-					callback: ($html) => {
-						const checkbox = $html[0].querySelector("input[name='clear-cache']");
+					callback: (_event, _button, dialog) => {
+						const checkbox = dialog.element.querySelector("input[name='clear-cache']");
 						const clearCache = checkbox?.checked;
 						this._restoreDefaults({ clearCache });
 					}
 				},
-				no: {
-					icon: '<i class="fa-solid fa-times"></i>',
+				{
+					action: "no",
+					icon: "fa-solid fa-times",
 					label: game.i18n.localize("No"),
+					default: true,
 					callback: () => { }
 				}
-			},
-			default: "no",
-			close: () => { }
+			]
 		});
 
-		confirmationDialog.render(true);
+		confirmationDialog.render({ force: true });
 	}
 
 	/**
@@ -872,27 +892,31 @@ export class ConditionLab extends FormApplication {
 	 * @param {*} event
 	 */
 	_onResetForm(event) {
-		const dialog = new Dialog({
-			title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ResetFormTitle"),
+		const dialog = new foundry.applications.api.DialogV2({
+			classes: ["ose", "dialog"],
+			position: { width: 400, height: "auto" },
+			window: { title: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ResetFormTitle") },
 			content: game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.ResetFormContent"),
-			buttons: {
-				yes: {
-					icon: '<i class="fa fa-check"></i>',
+			buttons: [
+				{
+					action: "yes",
+					icon: "fa-solid fa-check",
 					label: game.i18n.localize("Yes"),
-					callback: (event) => {
+					callback: () => {
 						this.map = this.initialMap;
 						this.render();
 					}
 				},
-				no: {
-					icon: '<i class="fa fa-times"></i>',
+				{
+					action: "no",
+					icon: "fa-solid fa-times",
 					label: game.i18n.localize("No"),
-					callback: (event) => { }
+					default: true,
+					callback: () => { }
 				}
-			},
-			default: "no"
+			]
 		});
-		dialog.render(true);
+		dialog.render({ force: true });
 	}
 
 	async _onDrop(event) {

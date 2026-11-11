@@ -6,6 +6,9 @@
 2. The Default/Inferred Condition Lab Mappings for game systems may not correctly import all data. Importing the map from the CUB Condition Maps folder imports correctly.
 3. PF2e is not currently supported by Enhanced Conditions due to the customisation of the effects framework implemented by the system.
 
+## [2.1.0-gygax75.8] - 2026-11-11
+- Migrated all remaining V1 `Dialog` and `Dialog.confirm` usages (`ConditionLab`, `TrigglerForm`, `EnhancedConditionOptionConfig`, and module settings) to Foundry V14 `DialogV2` with `classes: ["ose", "dialog"]`, explicit `position` sizing, raw DOM element handling, and Font Awesome 6 class icons.
+
 ## [2.1.0-gygax75.6] - 2026-06-14
 - Fixed a `ReferenceError` ("setProperty is not defined") thrown when editing a condition's effect in the Condition Lab on V13+ (now uses `foundry.utils.setProperty`).
 - Completed the Font Awesome 6 migration: converted the remaining `fas` references (Condition Lab/Triggler chevrons and form templates) to `fa-solid`.

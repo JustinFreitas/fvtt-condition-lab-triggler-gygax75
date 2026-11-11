@@ -87,12 +87,19 @@ export default class EnhancedConditionOptionConfig extends FormApplication {
 					statusEffect: event.detail.statusLabel ?? event.detail.statusName
 				}
 			);
-			const yes = () => { };
-			const no = () => {
-				return (event.target.checked = false);
-			};
-			const defaultYes = false;
-			return Dialog.confirm({ title, content, yes, no, defaultYes }, {});
+			const confirmed = await foundry.applications.api.DialogV2.confirm({
+				classes: ["ose", "dialog"],
+				position: { width: 400, height: "auto" },
+				window: { title },
+				content,
+				rejectClose: false,
+				yes: { default: false },
+				no: { default: true }
+			});
+			if (!confirmed) {
+				event.target.checked = false;
+			}
+			return confirmed;
 		}
 
 		return event;

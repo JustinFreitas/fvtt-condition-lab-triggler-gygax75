@@ -345,25 +345,30 @@ export class TrigglerForm extends FormApplication {
 	 * Borrowed from foundry.js Entity class
 	 */
 	async _importFromJSONDialog() {
-		new Dialog({
-			title: game.i18n.localize("CLT.TRIGGLER.ImportTitle"),
+		const renderTpl = foundry.applications?.handlebars?.renderTemplate ?? renderTemplate;
+		new foundry.applications.api.DialogV2({
+			classes: ["ose", "dialog"],
+			position: { width: 400, height: "auto" },
+			window: { title: game.i18n.localize("CLT.TRIGGLER.ImportTitle") },
 			// TODO change
-			content: await renderTemplate("modules/condition-lab-triggler/templates/import-conditions.html", {}),
-			buttons: {
-				import: {
-					icon: '<i class="fa-solid fa-file-import"></i>',
+			content: await renderTpl("modules/condition-lab-triggler/templates/import-conditions.html", {}),
+			buttons: [
+				{
+					action: "import",
+					icon: "fa-solid fa-file-import",
 					label: game.i18n.localize("CLT.WORDS.Import"),
-					callback: (html) => {
-						this._processImport(html);
+					default: true,
+					callback: (_event, _button, dialog) => {
+						this._processImport(dialog.element);
 					}
 				},
-				no: {
-					icon: '<i class="fa-solid fa-times"></i>',
+				{
+					action: "no",
+					icon: "fa-solid fa-times",
 					label: game.i18n.localize("Cancel")
 				}
-			},
-			default: "import"
-		}).render(true);
+			]
+		}).render({ force: true });
 	}
 
 	/**
@@ -372,7 +377,8 @@ export class TrigglerForm extends FormApplication {
 	 * @returns {*}
 	 */
 	async _processImport(html) {
-		const form = html.find("form")[0];
+		const root = html instanceof HTMLElement ? html : html[0];
+		const form = root?.querySelector("form");
 
 		if (!form.data.files.length) {
 			return ui.notifications.error(game.i18n.localize("CLT.ENHANCED_CONDITIONS.Lab.Import.NoFile"));
