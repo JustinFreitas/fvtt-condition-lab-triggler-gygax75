@@ -32,5 +32,10 @@
 	},
 	"lint-staged": {
 		"*.(js|cjs|mjs)": "eslint --fix"
+	},
+	"overrides": {
+		"postcss": "^8.5.23",
+		"markdown-it": "^14.1.0",
+		"linkify-it": "^5.0.0"
 	}
 }
